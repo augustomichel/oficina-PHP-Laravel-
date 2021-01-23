@@ -11,7 +11,7 @@
     Carro
 
 
-                <a class="btn btn-primary" href="{{ route('carros.index') }}"> Voltar</a>
+                
 
             
   </div>
@@ -55,7 +55,7 @@
 </div>
 
     </div>
-    
+    <a class="btn btn-primary" href="{{ route('carros.index') }}"> Voltar</a>
   </div>
 </div>
 @endsection

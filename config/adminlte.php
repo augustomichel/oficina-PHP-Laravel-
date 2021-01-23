@@ -99,7 +99,7 @@ return [
     | For detailed instructions you can look the auth classes section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/7.-Layout-and-Styling-Configuration
     |
-   
+    */
 
     'classes_auth_card' => 'card-outline card-primary',
     'classes_auth_header' => '',
@@ -107,15 +107,7 @@ return [
     'classes_auth_footer' => '',
     'classes_auth_icon' => '',
     'classes_auth_btn' => 'btn-flat btn-primary',
-*/
 
-
-    'classes_auth_card' => '',
-    'classes_auth_header' => 'bg-gradient-info',
-    'classes_auth_body' => '',
-    'classes_auth_footer' => 'text-center',
-    'classes_auth_icon' => 'fa-lg text-info',
-    'classes_auth_btn' => 'btn-flat btn-primary',
     /*
     |--------------------------------------------------------------------------
     | Admin Panel Classes

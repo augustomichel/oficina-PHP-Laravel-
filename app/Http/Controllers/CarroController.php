@@ -37,12 +37,19 @@ class CarroController extends Controller
      */
     public function store(Request $request)
     {
-            $request->validate([
+           $request->validate([
             'nome' => 'required',
             'veiculo' => 'required',
             'placa' => 'required',
+            ],         
+           [
+                'required' => 'O campo :attribute é obrigatório',
+            ], [
+                'nome'      => 'Nome',
+                'veiculo'     => 'Veículo',
+                'placa'  => 'Placa',
             ]);
-    
+
             Carro::create($request->all());
            
     
@@ -88,6 +95,13 @@ class CarroController extends Controller
             'nome' => 'required',
             'veiculo' => 'required',
             'placa' => 'required',
+            ], 
+           [
+                'required' => 'O campo :attribute é obrigatório',
+            ], [
+                'nome'      => 'Nome',
+                'veiculo'     => 'Veículo',
+                'placa'  => 'Placa',
             ]);
     
             $carro->update($request->all());
